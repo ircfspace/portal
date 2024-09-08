@@ -119,6 +119,11 @@
                 <div class="clearfix"></div>
                 <hr />
                 <footer>
+                    <script>
+                        if (window.location.href.endsWith(".php")) {
+                          window.location.href = window.location.href.replace(".php", ".html");
+                        }
+                    </script>
                     <p class="text-center text-info">زن، زندگی، آزادی</p>
                 </footer>
             </div>
