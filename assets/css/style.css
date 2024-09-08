@@ -412,4 +412,8 @@ footer {
     .fullBox .leftSide textarea {
         height: 70px;
     }
+    .tools li {
+        width: 47%;
+        margin: 0 0 3% 3%;
+    }    
 }
