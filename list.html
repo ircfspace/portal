@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./assets/css/bootstrap-rtl.min.css" rel="stylesheet" />
+        <link href="./assets/css/vazir.css" rel="stylesheet" />
+        <link href="./assets/css/style.css?v1.50" rel="stylesheet" />
+        <title>CloudFlare | لیست آیپی های تمیز</title>
+        <meta
+            name="description"
+            content="آی پی سالم و تمیز برای کلودفلر (کلادفلر) جهت دسترسی به اینترنت آزاد"
+        />
+        <meta
+            name="keywords"
+            content="کلودفلر, کلادفلر, cloudflare, cf, آی پی تمیز, آی پی سالم, اسکن آی پی"
+        />
+        <meta name="robots" content="index,follow,noodp" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="theme-color" content="#ff7900" />
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico?v1.1" />
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-centered">
+                    <a href="index.html">
+                        <img src="./assets/img/cflogo.png?v1.1" alt="logo" />
+                        <h1>اینترنت برای همه؛ یا هیچ‌کس!</h1>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="clearfix"></div>
+        <div class="container">
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-centered">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="index.html">معرفی</a>
+                    </li>
+                    <li>
+                        <a href="tools.html">ابزارها</a>
+                    </li>
+                    <li class="pull-left">
+                        <a href="contacts.html">تماس‌باما</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="alert alert-warning">
+                    <p>
+                        به‌جای قراردادن آی‌پی کلودفلر می‌تونین از آدرس‌های زیر
+                        متناسب با نیازتون استفاده کنین. در این‌رابطه آموزش‌های
+                        مختلفی در بخش
+                        <a href="linkbox.html" target="_blank">مباحث پرتکرار</a>
+                        یا یوتیوب، مثل
+                        <a
+                            href="https://youtu.be/zChRNJsOo6U?t=76"
+                            target="_blank"
+                            >این‌ویدئو</a
+                        >
+                        وجود داره.
+                    </p>
+                    <hr />
+                    <p>
+                        از اونجایی‌که ircf.space رو فیلتر کردن، میتونین
+                        <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#cnameModal"
+                            >توی کلودفلر برای ساب‌دامین خودتون CNAME تعریف
+                            کرده</a
+                        >
+                        و مقادیر زیر رو وارد کنین؛ اینطوری وقتی ما آی‌پی رو
+                        تغییر بدیم، واسه شما هم بروز میشه و کمترین دردسر رو
+                        خواهید داشت.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="cfips">
+                    <div class="btn-group">
+                        <button
+                            type="button"
+                            data-service="cname"
+                            data-sort="cname"
+                            class="btn btn-default active"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="لیستی‌از دامین‌های پشت‌کلودفلر که به‌عنوان آی‌پی تمیز مورد استفاده قرار می‌گیرند"
+                        >
+                            CNAME
+                        </button>
+                        <button
+                            type="button"
+                            data-service="cname"
+                            data-sort="ipv4"
+                            class="btn btn-default"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="چندین آی‌پی تست‌نشده، که به‌صورت خودکار و زمان‌بندی‌شده از منابع دیگر گردآوری می‌شوند"
+                        >
+                            IPv4
+                        </button>
+                        <!--<button type="button" data-service="cname" data-sort="ipv6" class="btn btn-default" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="چندین آی‌پی تست‌نشده، که به‌صورت خودکار و زمان‌بندی‌شده از منابع دیگر گردآوری می‌شوند">IPv6</button>-->
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> عمومی </span>
+                        <input
+                            type="text"
+                            id="cname"
+                            class="form-control dirLeft"
+                            value="cname.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr />
+                    <div class="btn-group">
+                        <button
+                            type="button"
+                            data-service="mci"
+                            data-sort=""
+                            class="btn btn-default active"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="آی‌پی تست‌شده توسط مشارکت‌کنندگان، که به‌صورت خودکار و زمانبندی‌شده تعویض می‌گردد"
+                        >
+                            عادی
+                        </button>
+                        <button
+                            type="button"
+                            data-service="mci"
+                            data-sort="c"
+                            class="btn btn-default"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="چندین آی‌پی تست‌نشده، که به‌صورت خودکار و زمان‌بندی‌شده از منابع دیگر گردآوری می‌شوند"
+                        >
+                            خزنده
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> همراه‌اول </span>
+                        <input
+                            type="text"
+                            id="mci"
+                            class="form-control dirLeft"
+                            value="mci.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="btn-group">
+                        <button
+                            type="button"
+                            data-service="mtn"
+                            data-sort=""
+                            class="btn btn-default active"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="آی‌پی تست‌شده توسط مشارکت‌کنندگان، که به‌صورت خودکار و زمانبندی‌شده تعویض می‌گردد"
+                        >
+                            عادی
+                        </button>
+                        <button
+                            type="button"
+                            data-service="mtn"
+                            data-sort="c"
+                            class="btn btn-default"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="چندین آی‌پی تست‌نشده، که به‌صورت خودکار و زمان‌بندی‌شده از منابع دیگر گردآوری می‌شوند"
+                        >
+                            خزنده
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> ایرانسل </span>
+                        <input
+                            type="text"
+                            id="mtn"
+                            class="form-control dirLeft"
+                            value="mtn.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="btn-group">
+                        <button
+                            type="button"
+                            data-service="mkh"
+                            data-sort=""
+                            class="btn btn-default active"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="آی‌پی تست‌شده توسط مشارکت‌کنندگان، که به‌صورت خودکار و زمانبندی‌شده تعویض می‌گردد"
+                        >
+                            عادی
+                        </button>
+                        <button
+                            type="button"
+                            data-service="mkh"
+                            data-sort="c"
+                            class="btn btn-default"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="چندین آی‌پی تست‌نشده، که به‌صورت خودکار و زمان‌بندی‌شده از منابع دیگر گردآوری می‌شوند"
+                        >
+                            خزنده
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> مخابرات </span>
+                        <input
+                            type="text"
+                            id="mkh"
+                            class="form-control dirLeft"
+                            value="mkh.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="btn-group">
+                        <button
+                            type="button"
+                            data-service="rtl"
+                            data-sort=""
+                            class="btn btn-default active"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="آی‌پی تست‌شده توسط مشارکت‌کنندگان، که به‌صورت خودکار و زمانبندی‌شده تعویض می‌گردد"
+                        >
+                            عادی
+                        </button>
+                        <button
+                            type="button"
+                            data-service="rtl"
+                            data-sort="c"
+                            class="btn btn-default"
+                            data-toggle="tooltip"
+                            data-trigger="hover"
+                            data-placement="top"
+                            title="چندین آی‌پی تست‌نشده، که به‌صورت خودکار و زمان‌بندی‌شده از منابع دیگر گردآوری می‌شوند"
+                        >
+                            خزنده
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> رایتل </span>
+                        <input
+                            type="text"
+                            id="rtl"
+                            class="form-control dirLeft"
+                            value="rtl.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr />
+                    <div class="input-group">
+                        <span class="input-group-addon"> های‌وب </span>
+                        <input
+                            type="text"
+                            id="hwb"
+                            class="form-control dirLeft"
+                            value="hwb.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> آسیاتک </span>
+                        <input
+                            type="text"
+                            id="ast"
+                            class="form-control dirLeft"
+                            value="ast.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> شاتل </span>
+                        <input
+                            type="text"
+                            id="sht"
+                            class="form-control dirLeft"
+                            value="sht.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> پارس‌آنلاین </span>
+                        <input
+                            type="text"
+                            id="prs"
+                            class="form-control dirLeft"
+                            value="prs.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> مبین‌نت </span>
+                        <input
+                            type="text"
+                            id="mbt"
+                            class="form-control dirLeft"
+                            value="mbt.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> اندیشه‌سبز </span>
+                        <input
+                            type="text"
+                            id="ask"
+                            class="form-control dirLeft"
+                            value="ask.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> رسپینا </span>
+                        <input
+                            type="text"
+                            id="rsp"
+                            class="form-control dirLeft"
+                            value="rsp.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> افرانت </span>
+                        <input
+                            type="text"
+                            id="afn"
+                            class="form-control dirLeft"
+                            value="afn.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> زی‌تل </span>
+                        <input
+                            type="text"
+                            id="ztl"
+                            class="form-control dirLeft"
+                            value="ztl.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> پیشگامان </span>
+                        <input
+                            type="text"
+                            id="psm"
+                            class="form-control dirLeft"
+                            value="psm.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> آراکس </span>
+                        <input
+                            type="text"
+                            id="arx"
+                            class="form-control dirLeft"
+                            value="arx.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> سامانتل </span>
+                        <input
+                            type="text"
+                            id="smt"
+                            class="form-control dirLeft"
+                            value="smt.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> شاتل‌موبایل </span>
+                        <input
+                            type="text"
+                            id="shm"
+                            class="form-control dirLeft"
+                            value="shm.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> فن‌آوا </span>
+                        <input
+                            type="text"
+                            id="fnv"
+                            class="form-control dirLeft"
+                            value="fnv.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> دیده‌بان‌نت </span>
+                        <input
+                            type="text"
+                            id="dbn"
+                            class="form-control dirLeft"
+                            value="dbn.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> آپتل </span>
+                        <input
+                            type="text"
+                            id="apt"
+                            class="form-control dirLeft"
+                            value="apt.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> فناپ‌تلکام </span>
+                        <input
+                            type="text"
+                            id="fnp"
+                            class="form-control dirLeft"
+                            value="fnp.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> رای‌نت </span>
+                        <input
+                            type="text"
+                            id="ryn"
+                            class="form-control dirLeft"
+                            value="ryn.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> صبانت </span>
+                        <input
+                            type="text"
+                            id="sbn"
+                            class="form-control dirLeft"
+                            value="sbn.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> پتیاک </span>
+                        <input
+                            type="text"
+                            id="ptk"
+                            class="form-control dirLeft"
+                            value="ptk.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> عصر تلکام </span>
+                        <input
+                            type="text"
+                            id="atc"
+                            class="form-control dirLeft"
+                            value="atc.ircf.space"
+                            readonly
+                        />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="cnameModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">راهنمای تعریف CNAME</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    src="assets/img/cname.jpg"
+                                    style="width: 100%"
+                                />
+                                <div class="clearfix"></div>
+                                <hr />
+                                <p>
+                                    برای تعریف‌کردن CNAME وارد بخش مدیریت دامین
+                                    در وب‌سایت cloudflare.com شده و به زیربخش
+                                    Records در سربرگ DNS برید. روی گزینه Add
+                                    Record زده و در پنجره بازشده مقدار Type رو
+                                    روی CName قرار بدید. مقدار Name رو شناسه‌ای
+                                    دلخواه درج کنین (مثلا اگر برای همراه‌اول
+                                    میسازین، mci یا اگر برای ایرانسل هست mtn
+                                    وارد کنین). مقدار فیلد Target باید آدرس
+                                    اون‌سرویس باشه (مثلا mtn.ircf.space).
+                                    چک‌باکس Proxy باید روی حالت خاموش قرار بگیره
+                                    و TTL روی Auto. در نهایت بر روی ذخیره کلیک
+                                    کنید.<br />البته اگر برای ایجاد CNAME دامین
+                                    شخصی ندارین، میتونین از سرویس noip.com یا
+                                    سرویس‌های مشابه استفاده کنین.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-default"
+                                    data-dismiss="modal"
+                                >
+                                    متوجه شدم
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <footer>
+                    <script>
+                        $(document).ready(function () {
+                            $('[data-toggle="tooltip"]').tooltip();
+                        });
+                        $(document).on(
+                            "click",
+                            "button[data-service]",
+                            function (e) {
+                                e.preventDefault();
+                                let provider = $(this).data("service");
+                                let sort = $(this).data("sort");
+                                $(
+                                    'button[data-service="' + provider + '"]'
+                                ).removeClass("active");
+                                if (provider !== "cname") {
+                                    $("#" + provider).val(
+                                        provider +
+                                            (sort !== "" ? sort : "") +
+                                            ".ircf.space"
+                                    );
+                                } else {
+                                    $("#" + provider).val(
+                                        (sort !== "" ? sort : "") +
+                                            ".ircf.space"
+                                    );
+                                }
+                                $(
+                                    'button[data-service="' +
+                                        provider +
+                                        '"][data-sort="' +
+                                        sort +
+                                        '"]'
+                                ).addClass("active");
+                            }
+                        );
+                    </script>
+                    <!--<div class="text-center">
+                    <a href="#" class="btn btn-link btn-normal btn-lg btn-outline" data-toggle="modal" data-target="#donate">☕</a>
+                </div>-->
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

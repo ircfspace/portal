@@ -1,0 +1,415 @@
+body {
+    font: 14px vazir;
+    padding: 85px 0 0 0;
+}
+input,
+select,
+textarea {
+    direction: rtl;
+    text-align: right;
+    margin: 10px 0;
+    width: 100%;
+    resize: none;
+}
+button {
+    width: 100%;
+}
+.dirLeft {
+    direction: ltr;
+    text-align: left;
+}
+
+p {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+ul li {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+.col-centered h3 {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.table td img {
+    width: 100%;
+}
+
+.alert {
+    margin: 20px 0;
+}
+
+.fullBox .rightSide {
+    float: right;
+    width: 160px;
+}
+.fullBox .rightSide img {
+    width: 100%;
+    height: 100%;
+}
+.fullBox .leftSide {
+    float: left;
+    width: calc(100% - 170px);
+}
+.fullBox .leftSide textarea {
+    height: 145px;
+}
+
+.checkBoxStyle {
+    float: right;
+    margin: -5px 0 0 0;
+}
+.checkBoxStyle input {
+    float: right;
+    margin: 5px 0 0 7px;
+    width: auto;
+}
+.checkBoxStyle label {
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.panel-heading[data-toggle="collapse"] {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inlineSearch {
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+.inlineSearch input {
+    padding: 15px;
+    height: auto;
+}
+
+.table {
+    margin: 0;
+}
+.table tr:first-child td {
+    border-top: none;
+}
+
+.qrCodeBtn {
+    display: inline-block;
+    margin: 0 2px;
+}
+.qrCodeBtn.full {
+    float: right;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.qrCodeBtn input[type="submit"] {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.label-default {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 4px 5px 3px 5px;
+    margin: 0 10px 0 0;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #5f5f5f;
+}
+
+.dropdown.openInRight .dropdown-menu {
+    right: inherit;
+    left: 0;
+}
+
+.logText {
+    float: right;
+    width: 100%;
+    height: 100px !important;
+    resize: none;
+}
+
+.input-group {
+    float: right !important;
+    width: 100%;
+}
+.input-group input {
+    width: 45% !important;
+    float: right;
+    margin: 0;
+}
+.input-group select {
+    width: 30% !important;
+    float: right;
+    margin: 0;
+}
+.input-group .input-group-btn {
+    width: 25% !important;
+    float: left;
+}
+.input-group .input-group-btn button {
+    width: 100% !important;
+}
+
+td em {
+    font-style: normal;
+}
+
+.nav-pills {
+    margin: 0 0 12px 0;
+}
+.nav-pills > li a {
+    padding: 2px 7px;
+    font-size: 12px;
+    border-radius: 25px;
+    color: #454545;
+}
+.nav-pills > li a:focus,
+.nav-pills > li a:hover,
+.nav-pills > li.active a,
+.nav-pills > li.active a:focus,
+.nav-pills > li.active a:hover {
+    background-color: #939393;
+    color: #fff;
+}
+
+.cfips {
+    float: right;
+    width: 100%;
+}
+.cfips .input-group {
+    float: right;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+.cfips .input-group .input-group-addon {
+    float: right;
+    width: 30%;
+    padding: 15px 5px;
+    border: 1px solid #ccc;
+    border-left: none;
+    height: 46px;
+}
+.cfips .input-group input[type="checkbox"] {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+}
+.cfips .input-group input[type="text"] {
+    float: left;
+    width: 70% !important;
+    background: #fff;
+    padding: 12px;
+    height: 46px;
+}
+
+.scanner select {
+    width: 40% !important;
+    height: 34px;
+}
+.scanner .input-group-addon {
+    width: 40% !important;
+    float: right;
+    text-align: center;
+    height: 34px;
+    padding-right: 0;
+    padding-left: 0;
+    border-color: #ccc;
+}
+.scanner input {
+    width: 20% !important;
+    padding-right: 3px;
+    padding-left: 3px;
+    text-align: center;
+}
+.scanner .input-group-btn {
+    width: 20% !important;
+}
+
+img[alt="loader"] {
+    width: 15px;
+    height: 10px;
+    transform: rotate(180deg);
+}
+
+.alert em {
+    font-style: normal;
+}
+
+.table .copyItem {
+    cursor: copy;
+}
+
+.jumbotron {
+    margin: 20px 0;
+    padding: 20px;
+}
+.jumbotron p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 34px;
+}
+.jumbotron b {
+    color: #ff7900;
+}
+
+.navbar {
+    float: right;
+    width: 100%;
+    border-radius: 0;
+    background-color: #ff7900;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 22px 0;
+    margin: 0 0 30px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.navbar img {
+    float: right;
+    width: 32px;
+    height: 15px;
+    margin: 0 0 0 15px;
+}
+.navbar h1 {
+    float: right;
+    margin: 0;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0;
+}
+
+.betaVersion {
+    float: right;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.betaVersion input[type="checkbox"] {
+    float: right;
+    width: 15px;
+    height: 15px;
+    margin: 3px 0 0 10px;
+}
+.betaVersion label {
+    float: right;
+    font-weight: normal;
+}
+
+.modalBodyOverflow {
+    max-height: 63vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.dropdown-menu {
+    right: -2px;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    background-color: #ff7900;
+}
+
+.gitIcon {
+    float: right;
+    width: 15px;
+    height: 15px;
+    margin: 4px 0 0 10px;
+}
+.gitIcon:hover {
+    opacity: 0.7;
+}
+
+.btn-group {
+    float: right;
+    width: 100%;
+    margin: 0 0 7px 0;
+}
+.btn-group button {
+    float: right;
+    width: auto;
+    padding: 3px 10px;
+    font-size: 12px;
+    outline: none;
+    position: relative;
+}
+.btn-group button:focus {
+    outline: none;
+}
+
+.tooltip {
+    font: 12px vazir;
+}
+
+.tools {
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 100%;
+    overflow: hidden;
+}
+.tools li {
+    float: right;
+    width: 30%;
+    margin: 0 0 3.33% 3.33%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+footer {
+    padding: 5px 0 15px 0;
+}
+
+@media (max-width: 700px) {
+    body,
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .fullBox .rightSide {
+        width: 50%;
+    }
+    .fullBox .leftSide {
+        width: 50%;
+    }
+    .fullBox .leftSide textarea {
+        height: 255px;
+    }
+    .modal-open .modal {
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .fullBox .rightSide {
+        width: 100%;
+    }
+    .fullBox .leftSide {
+        width: 100%;
+    }
+    .fullBox .leftSide textarea {
+        height: 70px;
+    }
+}
