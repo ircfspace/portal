@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect .php to .html
+RewriteCond %{REQUEST_URI} ^(.+)\.php$
+RewriteRule ^(.*)\.php$ /$1.html [R=301,L]
