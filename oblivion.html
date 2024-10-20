@@ -27,20 +27,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="./assets/favicon.ico?v1.1" />
         <script>
-            console.log(platform);
-            /*if ( platform.os.family === 'Windows' ) {
+            //console.log(platform);
+            if ( platform.os.family === 'Windows' ) {
                 window.location.href = "https://github.com/bepass-org/oblivion-desktop/releases/latest/download/oblivion-desktop-win-x"+platform.os.architecture+".exe";
             }
             else if ( platform.os.family === 'Android' ) {
                 window.location.href = "https://play.google.com/store/apps/details?id=org.bepass.oblivion";
             }
-            else if (['Mac', 'Mac OS X'].includes(platform.os.family)) {
+            /*else if (['Mac', 'Mac OS X'].includes(platform.os.family)) {
                 const isArm64 = platform.os.family === 'Mac' && platform.os.architecture === 64 && platform.os.cpu.includes('arm');
                 window.location.href = "https://github.com/bepass-org/oblivion-desktop/releases/latest/download/oblivion-desktop-mac-"+(isArm64 ? 'arm64' : 'x64')+".exe";
-            }
+            }*/
             else {
                 window.location.href = "https://github.com/bepass-org/oblivion-desktop/releases/latest#download";
-            }*/
+            }
         </script>
     </head>
     <body>
